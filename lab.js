@@ -7,9 +7,9 @@
 */
 
 //CODE HERE
-let lovesCode = "true"
+let lovesCode = true
 
-if (lovesCode === "true"){console.log("I love to code!")}
+if (lovesCode === true){console.log("I love to code!")}
 
 // For problems 2-3 use the following lines of code:
 var amysAge = 29;
@@ -25,6 +25,8 @@ var brittanisBirthYear = 1986;
 
 //CODE HERE
 
+if(brittanisAge > amysAge && brittanisBirthYear<amysBirthYear){
+  console.log("Brittan")}
 ////////// PROBLEM 3 //////////
 
 /*
@@ -32,18 +34,42 @@ var brittanisBirthYear = 1986;
 */
 
 //CODE HERE
+if(brittanisBirthYear === amysBirthYear){
+  console.log("Amy and Brittani were born in the same year!")
+}
+else {
+  console.log ("Amy and Brittani were not born in the same year")}
 
 ////////// PROBLEM 4 //////////
 
-let temperature = 55;
+let temperature = 80;
 let rain = true;
 
 /*
   Using an if statement and a comparison operator, create code that will log a suggestion on what type of clothes one should wear for the day, based on the above temperature and rain.
-  If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
+  If it is 80 degrees or above, and raining, one should wear a t-shirt and take an umbrella. If it is between 60 and 80 degrees, and raining, one should wear a rain-jacket. If it is 60 degrees or below, 
+  one should wear a jacket and carry an umbrella. Come up with your own clothing suggestions based on those temperature parameters when it is not raining.
 */
 
 //CODE HERE
+if(temperature >= 80 && rain === true){
+  console.log("You should wear a T-shirt and bring an umbrella")}
+else if(temperature >= 80 && rain === false){
+  console.log("You should wear a T-shirt NO rain today")
+}
+else if (temperature >60 && rain === true){
+  console.log("One should wear a jacket!")
+}
+else if (temperature > 60 && rain === false){
+  console.log("You should wear a T-shirt and bring a hoodie just in case!")
+}
+else if (temperature <= 60 && rain === true){
+  console.log("You should wear a jacket and Bring an umbrella its raining.")
+}
+else if (temperature <= 60 && rain === false){
+  console.log("You should wear a jacket!")
+}
+
 
 ////////// PROBLEM 5 //////////
 
@@ -52,7 +78,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (x=1; x < 11; x++) {
+  console.log("Hello")
+}
 ////////// PROBLEM 6 //////////
 
 /*
@@ -60,7 +88,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (x=1; x < 11; x++) {
+  console.log(x)
+}
 ////////// PROBLEM 7 //////////
 
 /*
@@ -68,7 +98,9 @@ let rain = true;
 */
 
 //CODE HERE
-
+for (x=10; x >-1; x--) {
+  console.log(x)
+}
 
 ////////// PROBLEM 8 //////////
 
@@ -80,7 +112,10 @@ let passingScore = 7;
 */
 
 //CODE HERE
-
+while (score < passingScore){
+  console.log("Your Score is not high enough")
+  score++
+}
 ////////// INTERMEDIATE PROBLEMS //////////
 
 ////////// PROBLEM 9 //////////
@@ -91,10 +126,16 @@ let passingScore = 7;
 */
 
 //CODE HERE
+changeMyMind = true;
+if(changeMyMind === true){changeMyMind = false}
+
+else if (changeMyMind === false){changeMyMind = true}
+
 
 ////////// PROBLEM 10 //////////
 // Using the "not" operator (!), change the current value of changeMyMind to true (it should currently be set to false due to the if-else statement in Problem 9). After you change the value of changeMyMind, console.log it's new value (it should now read true).
-
+if(changeMyMind != true ){changeMyMind = true}
+console.log(changeMyMind)
 //CODE HERE
 
 ////////// ADVANCED PROBLEMS //////////
@@ -105,3 +146,10 @@ let z = 5;
 // Create a while loop that continues to run while z is greater than 0. Within the while loop, log a countdown from the value of z to 1. Once you have logged the countdown, make sure you decrement z by 1. If your code is running properly, you should see: 5,4,3,2,1,4,3,2,1,3,2,1,2,1,1.
 
 //CODE HERE
+while(z>0){
+  console.log(z)
+  z--
+for (i=z; i>0 ; i--) 
+ console.log(i)
+
+}
